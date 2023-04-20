@@ -1,0 +1,11 @@
+@font-face {
+    font-family: $primary-font-bold;
+    src: url('../../fonts/albula-pro/AlbulaPro-Bold.eot');
+    src: url('../../fonts/albula-pro/AlbulaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/albula-pro/AlbulaPro-Bold.woff2') format('woff2'),
+        url('../../fonts/albula-pro/AlbulaPro-Bold.woff') format('woff'),
+        url('../../fonts/albula-pro/AlbulaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

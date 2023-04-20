@@ -1,0 +1,21 @@
+{
+    "home": {
+      "sidebarItems": [
+        {"name": "item 1", "link": "/home/item1"},
+        {"name": "item 2", "link": "/home/item2"}
+      ]
+    },
+    "dashboard": {
+      "sidebarItems": [
+        {"name": "item 3", "link": "/dashboard/item3"},
+        {"name": "item 4", "link": "/dashboard/item4"}
+      ]
+    },
+    "tools": {
+      "sidebarItems": [
+        {"name": "item 5", "link": "/tools/item5"},
+        {"name": "item 6", "link": "/tools/item6"}
+      ]
+    }
+  }
+  
