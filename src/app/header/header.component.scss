@@ -1,0 +1,41 @@
+.header{
+    position: relative;
+    float: right;
+    width: calc(100% - 320px);
+    border-bottom: 1px solid #DEDFE2;
+    .nav-padd{
+        padding: 3rem 4rem;
+    }
+    .navbar-nav{
+        .nav-item{
+            margin-right: 2rem;
+            .nav-link{
+                padding: 1rem 3rem;
+                color: #000;
+                font-size: 1.7rem;
+                border: 1px solid #DEDFE2;
+                &.active{
+                    color: #8FF129;
+                    background: #000;
+                }
+            }
+        }
+    }
+    .navbar-right{
+        .right-icons{
+            margin-left: 20px;
+            span{
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #000000;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,32 @@
+<header class="header">
+    <nav class="navbar navbar-expand-lg nav-padd">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" *ngFor="let item of headerList; let i=index">
+                <a class="nav-link rounded-pill" (click)="updateSidebar(item,i)" [ngClass]="activeTabs===i ? 'active': ''">{{item}}</a>
+              </li>
+            </ul>
+            <div class="align-items-center d-flex mb-2 mb-lg-0 me-auto navbar-right">
+                <div class="d-flex align-items-center">
+                   <button class="btn btn-primary rounded-pill">Buy/Sell</button>
+                   <button class="btn btn-primary rounded-pill">My Store</button>
+                </div>
+                <div class="d-flex align-items-center right-icons">
+                    <span>
+                      <img src="../../assets/images/svg-icon/search.svg" alt="search">
+                    </span>
+                    <span>
+                      <img src="../../assets/images/svg-icon/notification.svg" alt="notification">
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<app-sidebar [sidebarList]="sidebarList"></app-sidebar>
