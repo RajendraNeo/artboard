@@ -4,8 +4,10 @@
         <img src="../../assets/images/svg-icon/logo.svg" alt="logo" class="logo-img">
         <span class="logo-contain">Real Estate Digital Assets</span>
     </a>
-    <ul>
-        <li *ngFor="let item of sidebarList">{{item}}</li>
+    <ul class="sidebar__list">
+        <li class="sidebar__list--item" *ngFor="let item of sidebarList; let i=index">
+            <a class="sidebar__list--item-link">{{item}}</a>
+        </li>
     </ul>
    </div>
 </aside>
