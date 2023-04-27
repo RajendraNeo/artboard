@@ -27,15 +27,25 @@
        margin: 0;
        padding: 0;
        list-style: none;
+       margin-top: 5.6rem;
         &--item{
-            margin: 2.2rem 0;
+            margin: 1.2rem 0;
             &-link{
               display: block;
               font-size: 1.7rem;
               line-height: 2.1;
-              padding: 1.7rem 3.3rem;
-              background-color: $primary-color;
+              padding: 1.5rem 3.2rem;
+              background-color: transparent;
+              color: $dark-color;
               border-radius: 999em;
+              &.active{
+                color: $white-color;
+                background-color: $primary;
+              }
+              &:hover{
+                color: $white-color;
+                background-color: $primary;
+              }
             }
         }
     }

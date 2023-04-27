@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @Input() sidebarList!: string[];
   @Input() menuItems!: any[];
+  activeTabs:number=0;
   constructor() { }
 
   ngOnInit(): void {

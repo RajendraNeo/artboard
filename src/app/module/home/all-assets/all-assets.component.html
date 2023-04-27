@@ -1,2 +1,7 @@
-<p>all-assets works!</p>
-<app-assets-card></app-assets-card>
+<div class="container-fluid">
+    <div class="d-flex justify-content-between">
+        <ng-container *ngFor="let data of homeCardsData">
+            <app-assets-card [homeCardData]="data"></app-assets-card>
+        </ng-container>
+    </div>
+</div>

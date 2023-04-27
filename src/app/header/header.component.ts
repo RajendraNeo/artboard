@@ -13,29 +13,33 @@ export class HeaderComponent implements OnInit {
     this.updateSidebar('Home',this.activeTabs);
   }
 
-  headerList = ['Home', 'About', 'Services', 'Contact', 'FAQ'];
+  headerList = ['Home', 'Dashboard', 'Leaderboards', 'Community','Tools', 'Browse'];
   activeTabs:number=0;
   sidebarList: string[] = [];
   updateSidebar(headerItem: string,index:any) {
     switch (headerItem) {
       case 'Home':
-        this.sidebarList = ['Welcome', 'Features', 'Pricing'];
+        this.sidebarList = ['All Assets', 'Top Stories', 'Guides & Tutorials', 'Help'];
         this.activeTabs=index;
         break;
-      case 'About':
-        this.sidebarList = ['Company', 'Team', 'History'];
+      case 'Dashboard':
+        this.sidebarList = ['Portfolio', 'Performance', 'Import Assets', 'For You'];
         this.activeTabs=index;
         break;
-      case 'Services':
-        this.sidebarList = ['Web Development', 'App Development', 'Design'];
+      case 'Leaderboards':
+        this.sidebarList = ['Virtual Land', 'Real Estate/NFTS', 'Crowdfunding', 'Phyrtual-Hybrid '];
         this.activeTabs=index;
         break;
-      case 'Contact':
-        this.sidebarList = ['Location', 'Phone', 'Email'];
+      case 'Community':
+        this.sidebarList = ['News Feed', 'Trending', 'My Groups', 'My Pages'];
         this.activeTabs=index;
         break;
-      case 'FAQ':
-        this.sidebarList = ['Questions', 'Answers', 'Contact Us'];
+      case 'Tools':
+        this.sidebarList=['Compare', 'Portfolio Builder'];
+        this.activeTabs=index;
+        break;  
+      case 'Browse':
+        this.sidebarList = ['Listings', 'My Store'];
         this.activeTabs=index;
         break;
     }

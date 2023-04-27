@@ -1,0 +1,63 @@
+@import '../../../assets/scss/helpers/variables';
+
+.card{
+    width: 40rem;
+    border-radius: 3.5rem;
+    padding: 2.5rem 0;
+    &-header{
+        background: none;
+        padding: 0 3.6rem;
+        border-bottom: 0.2rem solid #fff;
+        .card-title{
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+        }
+        .card-subtitle{
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin-bottom: 1.3rem;   
+        }
+    }
+    &-body{
+        padding: 0 3.6rem;
+        table{
+            thead{
+               tr{
+                th{
+                    font-size: 1.5rem;
+                    padding: 1rem 0;
+                }
+               }
+            }
+            tbody{
+                tr{
+                 td{
+                    font-size: 1.4rem;
+                    .company-details{
+                        display: flex;
+                        align-items: center;
+                        .img-container{
+                            width: 5rem;
+                            height: 5rem;
+                            margin-right: 1.2rem;
+                        }
+                        .company-headings{
+                            &-title{
+                                font-size: 1.35rem;
+                                line-height: 1.6rem;
+                                color: $dark-color;
+                            }
+                            &-subtitle{
+                                font-size: 1.35rem;
+                                line-height: 1.6rem;
+                                color: $white-color;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                 }
+                }
+            }
+        }
+    }
+}
